@@ -1,0 +1,16 @@
+[package]
+name = "hollow-knight-save-converter"
+version = "1.0.0"
+edition = "2024"
+authors = ["Manos Pitsidianakis <manos@pitsidianak.is>"]
+license = "EUPL-1.2 OR GPL-3.0-or-later"
+readme = "README.md"
+description = "Save decoder/encoder for Hollow Knight. Decodes/encodes save files to/from plain JSON. "
+
+[dependencies]
+aes = { version = "0.8.4" }
+base64 = { version = "0.22.1" }
+block-padding = { version = "0.3.3" }
+clap = { version = "4.5.35", features = ["derive"] }
+ecb = { version = "0.1.2" }
+serde_json = { version = "1.0.140", features = ["arbitrary_precision", "float_roundtrip", "preserve_order"] }
